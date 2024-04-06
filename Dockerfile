@@ -1,6 +1,5 @@
 FROM nvidia/cuda:12.1.0-devel-ubuntu22.04
 WORKDIR /build
-VOLUME ./build /build
 
 # for TORCH_CUDA_ARCH_LIST, select the ones for your gpu(s)
 # https://developer.nvidia.com/cuda-gpus
