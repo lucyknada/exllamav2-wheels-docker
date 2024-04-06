@@ -1,0 +1,6 @@
+services:
+  exl:
+    build: .
+    volumes:
+      - ./build:/build
+    command: cd /build && git clone --branch dev https://github.com/turboderp/exllamav2 && cd exllamav2 && pip install -r requirements.txt && python3 setup.py bdist_wheel
